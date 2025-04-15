@@ -1,0 +1,45 @@
+@import 'react-multi-carousel/lib/styles.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-dot-list-style {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.custom-dot-list-style li {
+  margin: 0 5px;
+}
+
+.custom-dot-list-style button {
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.custom-dot-list-style .react-multi-carousel-dot--active button {
+  background: white;
+  transform: scale(1.2);
+}
+
+.carousel-container {
+  padding-bottom: 20px;
+}
+
+.carousel-item {
+  padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .custom-dot-list-style {
+    margin-top: 10px;
+  }
+}
